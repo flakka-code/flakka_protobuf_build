@@ -7,8 +7,8 @@ environment:
   sdk: "^3.3.0"
 
 dependencies:
-  flakka_internal_protobuf_types:
-    git: https://github.com/flakka-code/flakka_internal_protobuf_types
+  flakka_protobuf_build_types:
+    git: https://github.com/flakka-code/flakka_protobuf_build_types
   protobuf:
 
 dev_dependencies:
