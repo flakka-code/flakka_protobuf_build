@@ -16,6 +16,8 @@
   ],
   "useGitignore": true,
   "words": [
-    "flakka_protobuf_build"
+    "flakka",
+    "flakka_protobuf_build",
+    "protobuf"
   ]
 }
