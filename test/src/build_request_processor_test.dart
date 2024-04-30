@@ -1,6 +1,4 @@
-// ignore_for_file: prefer_const_constructors
 import 'dart:async';
-// import 'dart:typed_data' show BytesBuilder;
 
 import 'package:flakka_internal_protobuf_types/google/protobuf/compiler/plugin.pb.dart';
 import 'package:flakka_internal_protobuf_types/google/protobuf/descriptor.pb.dart';
@@ -8,7 +6,7 @@ import 'package:flakka_protobuf_build/flakka_protobuf_build.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('CodeGenRequestProcessor', () {
+  group('BuildRequestProcessor', () {
     test('handles request and generates response', () async {
       // Create a request with some dummy data
       final request = CodeGeneratorRequest()
@@ -23,7 +21,7 @@ void main() {
 
       // Create the processor and handle the request
       final processorComplete =
-          CodeGenRequestProcessor(inputStream, outputStreamController)
+          BuildRequestProcessor(inputStream, outputStreamController)
               .handle((req) {
         // Verify the request
         expect(req.protoFile.length, 1);
