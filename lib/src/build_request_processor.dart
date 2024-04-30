@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data' show BytesBuilder;
 
-import 'package:flakka_internal_protobuf_types/google/protobuf/compiler/plugin.pb.dart';
 import 'package:flakka_protobuf_build/flakka_protobuf_build.dart';
+import 'package:flakka_protobuf_build_types/google/protobuf/compiler/plugin.pb.dart';
 import 'package:protobuf/protobuf.dart';
 
 /// {@template flakka_internal_code_gen_request_processor}
